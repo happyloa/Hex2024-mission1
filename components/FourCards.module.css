@@ -24,6 +24,7 @@
 }
 
 .card .img_wrapper img {
+  width: 100%;
   border: 1px solid #f1f1f1;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
@@ -66,4 +67,10 @@
 .card_tags span:hover {
   background-color: #000;
   color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .card_wrapper {
+    padding: 20px;
+  }
 }
