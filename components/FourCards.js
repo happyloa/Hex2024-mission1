@@ -30,31 +30,26 @@ const cardInfos = [
 export default function FourCards() {
   return (
     <section className={styles.container}>
-      <main className={styles.card_wrapper}>
-        <ul>
-          {cardInfos.map((val, i) => (
-            <li>
-              <article className={styles.card}>
-                <div className={styles.img_wrapper}>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image1.png?raw=true"
-                    alt="星際旅行訂票平台"
-                  />
-                </div>
-                <div className={styles.card_content}>
-                  <h3>星際旅行訂票平台</h3>
-                  <p>悠遊宇宙的夢想，從這裡開始實現</p>
-                </div>
-                <div className={styles.card_tags}>
-                  <span>網頁設計</span>
-                  <span>響應式設計</span>
-                  <span>Bootstrap</span>
-                </div>
-              </article>
-            </li>
-          ))}
-        </ul>
-      </main>
+      <ul className={styles.card_wrapper}>
+        {cardInfos.map((val, i) => (
+          <li key={i}>
+            <article className={styles.card}>
+              <div className={styles.img_wrapper}>
+                <img src={val.Img} alt={val.title} />
+              </div>
+              <div className={styles.card_content}>
+                <h3>{val.title}</h3>
+                <p>{val.description}</p>
+              </div>
+              <div className={styles.card_tags}>
+                {cardInfos[i].tags.map((content, i) => (
+                  <span key={i}>{content.tags}</span>
+                ))}
+              </div>
+            </article>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
