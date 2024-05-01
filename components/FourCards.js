@@ -31,8 +31,8 @@ export default function FourCards() {
   return (
     <section className={styles.container}>
       <ul className={styles.card_wrapper}>
-        {cardInfos.map((val, i) => (
-          <li key={i}>
+        {cardInfos.map((val, idx) => (
+          <li key={idx}>
             <article className={styles.card}>
               <div className={styles.img_wrapper}>
                 <img src={val.Img} alt={val.title} />
@@ -42,8 +42,8 @@ export default function FourCards() {
                 <p>{val.description}</p>
               </div>
               <div className={styles.card_tags}>
-                {cardInfos[i].tags.map((content, i) => (
-                  <span key={i}>{content.tags}</span>
+                {val.tags.map((content, tagIndex) => (
+                  <span key={tagIndex}>{content}</span>
                 ))}
               </div>
             </article>
