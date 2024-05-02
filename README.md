@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 六角學院 2024 體驗營 | 切版任務作業一 - 個人品牌網站 - 開發經驗卡片設計
 
-## Getting Started
+四個卡片切版練習，主要用來熟悉 Flexbox。
+線上 Demo：[點這裡](https://hex2024-mission1.vercel.app/)
+設計稿：[點這裡](https://www.figma.com/file/rX9YdVutqj9jF0kw72SAKi/2024ver.-%E9%AB%94%E9%A9%97%E7%87%9F%E8%A8%AD%E8%A8%88%E7%A8%BF?type=design&node-id=2221-22843&mode=design&t=eHIm1tvOJekYWyMt-0)
 
-First, run the development server:
+## 如何安裝所需套件？
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+將檔案 clone 下來後，輸入：
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    npm install
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+安裝需要的套件。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+接著，輸入：
 
-## Learn More
+    npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+在本地端啟動開發環境，預設的監聽端口是 3000，等到本地開發環境正式啟動後，可以在瀏覽器上輸入：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+以在本地端預覽專案
