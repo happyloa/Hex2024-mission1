@@ -37,11 +37,11 @@ export default function FourCards() {
               <div className={styles.img_wrapper}>
                 <img src={val.Img} alt={val.title} />
               </div>
-              <div className={styles.card_content}>
+              <div className={`${styles["card_content"]} ${styles["px-16"]}`}>
                 <h3>{val.title}</h3>
                 <p>{val.description}</p>
               </div>
-              <div className={styles.card_tags}>
+              <div className={`${styles["card_tags"]} ${styles["px-16"]}`}>
                 {val.tags.map((content, tagIndex) => (
                   <span key={tagIndex}>{content}</span>
                 ))}
